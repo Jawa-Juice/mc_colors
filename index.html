@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex">
+        <title>Colors are Scuffed</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic">
+    </head>
+    <body>
+        <div class="container">
+                <div class="tools">
+                    <div class="colors">
+                        <button data-color="0" class="bg-1">&amp;0</button>
+                        <button data-color="1" class="bg-2">&amp;1</button>
+                        <button data-color="2" class="bg-3">&amp;2</button>
+                        <button data-color="3" class="bg-4">&amp;3</button>
+                        <button data-color="4" class="bg-5">&amp;4</button>
+                        <button data-color="5" class="bg-6">&amp;5</button>
+                        <button data-color="6" class="bg-7">&amp;6</button>
+                        <button data-color="7" class="bg-8">&amp;7</button>
+                        <button data-color="8" class="bg-9">&amp;8</button>
+                        <button data-color="9" class="bg-10">&amp;9</button>
+                        <button data-color="a" class="bg-11">&amp;a</button>
+                        <button data-color="b" class="bg-12">&amp;b</button>
+                        <button data-color="c" class="bg-13">&amp;c</button>
+                        <button data-color="d" class="bg-14">&amp;d</button>
+                        <button data-color="e" class="bg-15">&amp;e</button>
+                        <button data-color="f" class="bg-16">&amp;f</button>
+                    </div>
+                    <div class="style">
+                        <button data-color="l"><span style="font-weight: bold;">Bold</span></button>
+                        <button data-color="n"><span style="text-decoration: underline;">Underline</span></button>
+                        <button data-color="o"><span style="font-style: italic;">Italic</span></button>
+                        <button data-color="m"><span style="text-decoration: line-through;">Strikethrough</span></button>
+                        <button data-color="k">Obfuscated</button>
+                        <button data-color="r">Reset</button>
+                    </div>
+                </div>
+            
+            
+                <div class="editor">
+                    <textarea name="inputbox" onKeyUp="colour(this.value)"></textarea>
+                    <div class="output" id="output">
+                </div>
+            </div>
+                
+                
+            <div class="bgs">	
+                <div class="dirt"></div>
+                <div class="plains"></div>
+                <div class="item"></div>
+            
+            </div>
+            
+            
+            <!-- <div class="main">
+                <div class="colours">
+                    <div class="btxt bg-1"><div class="label">&amp;0</div></div>
+                    <div class="btxt bg-2"><div class="label">&amp;1</div></div>
+                    <div class="btxt bg-3"><div class="label">&amp;2</div></div>
+                    <div class="btxt bg-4"><div class="label">&amp;3</div></div>
+                    <div class="btxt bg-5"><div class="label">&amp;4</div></div>
+                    <div class="btxt bg-6"><div class="label">&amp;5</div></div>
+                    <div class="btxt bg-7"><div class="label">&amp;6</div></div>
+                    <div class="btxt bg-8"><div class="label">&amp;7</div></div>
+                    <div class="btxt bg-9"><div class="label">&amp;8</div></div>
+                    <div class="btxt bg-10"><div class="label">&amp;9</div></div>
+                    <div class="btxt bg-11"><div class="label">&amp;a</div></div>
+                    <div class="btxt bg-12"><div class="label">&amp;b</div></div>
+                    <div class="btxt bg-13"><div class="label">&amp;c</div></div>
+                    <div class="btxt bg-14"><div class="label">&amp;d</div></div>
+                    <div class="btxt bg-15"><div class="label">&amp;e</div></div>
+                    <div class="btxt bg-16"><div class="label">&amp;f</div></div>
+                    <div class="ctxt"><div class="label">&amp;l - <span style='font-weight:900;'>Bold</span></div></div>
+                    <div class="ctxt"><div class="label">&amp;n - <span style='text-decoration:underline;'>Underline</span></div></div>
+                    <div class="ctxt"><div class="label">&amp;o - <span style='font-style:italic;'>Itallic</span></div></div>
+                    <div class="ctxt"><div class="label">&amp;m - <span style='text-decoration:line-through;'>Strike</span></div></div>
+                    <div class="ctxt"><div class="label">&amp;r - Reset</div></div>
+                </div>
+            </div> -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script src="script.js"></script>
+    </body>
+</html>

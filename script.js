@@ -79,12 +79,13 @@ $('body').mouseup(function(){
   document.getElementById('output').innerHTML=text;
   
   }
-  
-  
-  setInterval(function() {
-    $('.obfuscated').text(randomizer($('.obfuscated').text()));
-  }, 100);
-  
+    
+setInterval(function() {
+	let obsfuscatedTxt = document.querySelectorAll(`.obfuscated`);
+	obsfuscatedTxt.forEach((f, i) => {
+		f.innerHTML = randomizer(f.innerHTML.toString()).toString();
+	});
+}, 100);
   
   function htmlEncode(value){
     return $('<div/>').text(value).html();

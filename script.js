@@ -91,8 +91,8 @@ setInterval(function() {
     return $('<div/>').text(value).html();
   }
   
-  function randomizer(rawr) {
-      var length = rawr.length;
+  function randomizer(pepega) {
+      var length = pepega.length;
       var text = '';
       var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   
